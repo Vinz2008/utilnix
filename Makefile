@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo clean
+all: setup cat echo clean-build
 
 setup:
 	rm -rf build
@@ -12,6 +12,10 @@ cat:
 
 echo:
 	$(CC) -o build/utilnix-echo src/echo.c
+
+clean-build:
+	rm -rf build/objs
+
 
 clean:
 	rm -rf build

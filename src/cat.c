@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv){
 	FILE* f;
-	char* line;
+	char* line = NULL;
 	ssize_t charNb;
 	size_t len;
 	if ((f = fopen(argv[1], "r")) == NULL){
