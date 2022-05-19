@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo ls clean-build
+all: setup cat echo ls true clean-build
 
 setup:
 	rm -rf build
@@ -15,6 +15,10 @@ echo:
 
 ls:
 	$(CC) -o build/utilnix-ls src/ls.c
+
+true:
+	$(CC) -o build/utilnix-true src/true.c
+
 
 clean-build:
 	rm -rf build/objs
