@@ -1,1 +1,1 @@
-extern int replaceString(char* strToReplace, char* strReplacing, char* str);
+char* replaceString(char* strToReplace, char* strReplacing, char* str);
