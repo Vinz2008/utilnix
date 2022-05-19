@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo ls true clean-build
+all: setup cat echo ls true touch clean-build
 
 setup:
 	rm -rf build
@@ -19,6 +19,8 @@ ls:
 true:
 	$(CC) -o build/utilnix-true src/true.c
 
+touch:
+	$(CC) -o build/utilnix-touch src/touch.c
 
 clean-build:
 	rm -rf build/objs
