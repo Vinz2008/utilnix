@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo ls true touch rm mkdir pwd whoami clean-build
+all: setup cat echo ls true touch rm mkdir pwd whoami uptime clean-build
 
 setup:
 	rm -rf build
@@ -35,6 +35,8 @@ pwd:
 whoami:
 	$(CC) -o build/utilnix-whoami src/whoami.c
 
+uptime:
+	$(CC) -o build/utilnix-uptime src/uptime.c
 clean-build:
 	rm -rf build/objs
 
