@@ -8,4 +8,5 @@ int main(int argc, char** argv){
 	exit(1);
 	}
 	fclose(f);
+	return 0;
 }

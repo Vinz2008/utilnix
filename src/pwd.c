@@ -12,5 +12,5 @@ int main(){
         printf("Couln't find current working directory\n");
         exit(1);
     }
-
+    return 0;
 }
