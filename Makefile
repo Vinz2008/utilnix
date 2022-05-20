@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo ls true touch rm mkdir clean-build
+all: setup cat echo ls true touch rm mkdir pwd clean-build
 
 setup:
 	rm -rf build
@@ -27,6 +27,9 @@ rm:
 
 mkdir:
 	$(CC) -o build/utilnix-mkdir src/mkdir.c
+
+pwd:
+	$(CC) -o build/utilnix-pwd src/pwd.c
 
 clean-build:
 	rm -rf build/objs
