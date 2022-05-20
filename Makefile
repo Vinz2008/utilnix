@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo ls true touch rm mkdir pwd whoami uptime head nproc clean-build
+all: setup cat echo ls true touch rm mkdir pwd whoami uptime head nproc cp clean-build
 
 setup:
 	rm -rf build
@@ -43,6 +43,9 @@ head:
 
 nproc:
 	$(CC) -o build/utilnix-nproc src/nproc.c
+
+cp:
+	$(CC) -o build/utilnix-cp src/cp.c
 
 clean-build:
 	rm -rf build/objs
