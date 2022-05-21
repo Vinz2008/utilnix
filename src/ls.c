@@ -33,4 +33,5 @@ int main(int argc, char** argv){
 	printf("The directory doesn't exist or is unreadable\n");
 	exit(1);
 	}
+	return 0;
 }
