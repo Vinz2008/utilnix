@@ -59,3 +59,7 @@ clean-build:
 
 clean:
 	rm -rf build
+
+install:
+	rm -rf build/objs
+	cp build/* /usr/bin
