@@ -1,6 +1,6 @@
 CC=gcc
 
-all: setup cat echo ls true touch rm mkdir pwd whoami uptime head nproc cp ln nl clean-build
+all: setup cat echo ls true touch rm mkdir pwd whoami uptime head nproc cp ln nl yes time clean-build
 
 setup:
 	rm -rf build
@@ -52,6 +52,12 @@ ln:
 
 nl:
 	$(CC) -o build/utilnix-nl src/nl.c
+
+yes:
+	$(CC) -o build/utilnix-yes src/yes.c
+
+time:
+	$(CC) -o build/utilnix-time src/time.c
 
 clean-build:
 	rm -rf build/objs
