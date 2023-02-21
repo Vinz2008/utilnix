@@ -11,7 +11,7 @@ int main(int argc, char** argv){
 	exit(1);
 	}
 	for (int i = 0; i < 10; i++){
-	charNb = getline(&line, &len, f);
+	getline(&line, &len, f);
 	printf("%s",line);
 	}
 	fclose(f);

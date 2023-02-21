@@ -28,7 +28,7 @@ int main(int argc, char**argv){
         		ssize_t charNb;
         		size_t len;
 			out = fopen(argv[2], "w");
-			while ((charNb = getline(&line, &len, f)) != -1){
+			while (getline(&line, &len, f) != -1){
 			fprintf(out, "%s", line);
 			}
 			break;

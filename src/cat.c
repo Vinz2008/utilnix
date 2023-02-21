@@ -10,7 +10,7 @@ int main(int argc, char** argv){
 	printf("The file doesn't exist or cannot be opened\n");
 	exit(1);
 	}
-	while ((charNb = getline(&line, &len, f)) != -1){
+	while (getline(&line, &len, f) != -1){
 	printf("%s",line);
 	}
 	fclose(f);

@@ -4,14 +4,13 @@
 int main(int argc, char** argv){
     FILE* f;
 	char* line = NULL;
-	ssize_t charNb;
 	size_t len;
     int lineNb = 0;
 	if ((f = fopen(argv[1], "r")) == NULL){
 	printf("The file doesn't exist or cannot be opened\n");
 	exit(1);
 	}
-	while ((charNb = getline(&line, &len, f)) != -1){
+	while (getline(&line, &len, f) != -1){
     lineNb++;
 	printf("%i %s",lineNb,line);
 	}
